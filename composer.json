@@ -1,0 +1,21 @@
+{
+  "name": "mpociot/laravel-composite-key",
+  "description": "Support composite keys in your laravel app.",
+  "keywords": [],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marcel Pociot",
+      "email": "m.pociot@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mpociot\\HasCompositeKey\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/database": "5.*"
+  }
+}
