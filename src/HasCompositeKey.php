@@ -3,7 +3,6 @@
 namespace Mpociot\HasCompositeKey;
 
 use Exception;
-use Illuminate\Database\Eloquent\Builder;
 
 /**
  * Use this trait if your model has a composite primary key.
@@ -27,11 +26,11 @@ trait HasCompositeKey
     /**
      * Set the keys for a save update query.
      *
-     * @param  Builder $query
-     * @return Builder
+     * @param  \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
      * @throws Exception
      */
-    protected function setKeysForSaveQuery(Builder $query)
+    protected function setKeysForSaveQuery($query)
     {
         foreach ($this->getKeyName() as $key) {
             if ($this->$key)
